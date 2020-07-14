@@ -1,0 +1,185 @@
+{"success":true,"data":{"account":{"name":"vaccmulkey11","owner":{"privateKey":"5KipZi2z55dhtmpLtrypy5zqMaP6ndrSf4EbB2d4tvN7aRkFCgz","publicKey":"EOS6eYqJKDuo6rBhbxtqpcdd6ErXxobMAZcxVL1a63bqv873j4nVU"},"active":{"privateKey":"5KJRaXfqtM4UFsGnA2VG1UwQknEynqkMQgxRSbyQedCjAQp8Uj2","publicKey":"EOS6RMRcx6RWATxBdhNsW2xWUCio5BkqqGbdaGeyjrfwtm15sSarj"}},"tx":"9a62a7fa4149bb809696e940fcc8a27d04099a1bd16a492aee955cfc08d2da33"}}
+
+{
+"success": true,
+"data": {
+  "account": {
+    "name": "dappclaimacc",
+    "owner": {
+      "privateKey": "5KHdoLvgBMPzErupi3WC93TkcgYLqcPeBRQFs25qgUtKFnLi7QU",
+      "publicKey": "EOS66EXTjEmttvRy6TX3KBw5p3W22Coj7uejhH7s8Lyq7J8HuFDXb"
+    },
+    "active": {
+      "privateKey": "5JmLGBtScQgQqQzeTxGUq4fX2oBZThKaaffrngx1DuwJ5NjxKdt",
+      "publicKey": "EOS7hGD6Cp2jN558iFKCFiWALrK6tQJ7RnC6gULHEdrThYNpm41td"
+    }
+  },
+  "tx": "247e42e833f89709078646ea47d05760e8de419eca8bdb291a0ec1da4d448618"
+}
+}
+
+
+
+
+{
+  "success": true,
+  "data": {
+    "account": {
+      "name": "ocmtokencon1",
+      "owner": {
+        "privateKey": "5J4XMLCchVx4XEqm1suyNeVRRXSX2mz61XE2aH5Q9axH8a4Upuh",
+        "publicKey": "EOS5KPk1Z6ChQ8QyEBhEGh4R7oBsqe2zrZoE8fuCbP2xjg6qNaF28"
+      },
+      "active": {
+        "privateKey": "5Jh8jT7yRs7H2X1YxqjTyWFvPCytUUcrJx9ztyxHSrYo71XQLiA",
+        "publicKey": "EOS7aZJs2rYr9tPzZ1nRBw1Td6aTMMFXdiH6ccpU1vHrutT3TZa8G"
+      }
+    },
+    "tx": "ee9961864b9dc5be0d8b9b06a7353d629a4dca0448e4cae3ae792a535dbca675"
+  }
+}
+
+
+"success": true,
+"data": {
+  "account": {
+    "name": "claimdistacc",
+    "owner": {
+      "privateKey": "5K5LttDivaDo5UCvr4XRvtHrEb74S9T4bU6R6RVrubB5EJmuEDu",
+      "publicKey": "EOS5PHK8XWHaaffbUNY1zwnsM8Liyow6EFq62VmFNk1C3pWD8vrzQ"
+    },
+    "active": {
+      "privateKey": "5KgoPyAoAZP6y2sKQWyzn8FrRkiyDHxgdE5hFEKyQEaLir6UUAy",
+      "publicKey": "EOS5VvaNt9WNpQY1Aov2R7oGudXGJeKRJGyKZaFrfSB2QGZ9BahmP"
+    }
+  },
+  "tx": "11d3465ea0eef5515fe3c5b803c5aef04a77b719dac0128c7a3285c29629f777"
+}
+}
+
+{
+  "success": true,
+  "data": {
+    "account": {
+      "name": "issueadminac",
+      "owner": {
+        "privateKey": "5KAHikHRnPaTxzkSLUG9Fpa8r2XXajn9JVR4zX47ESib6vkfon3",
+        "publicKey": "EOS7ZaiNite4kSCNDPEeLL9SJLVxYtvSpvzrExipdVfnqRU7qcvrf"
+      },
+      "active": {
+        "privateKey": "5KRo6X6MJHcyZVyTUe3PncYBCLKjzBjQdHDY7KeY2zT3ZJ7A5bc",
+        "publicKey": "EOS8VMqmvnfwxrrune6Y8n8wPo1g5YN53vgHrPP6DBDX4rjN6k6HK"
+      }
+    },
+    "tx": "43e9011fcd0f7ad013910b7351c7f5d218c59d6e097e61c2b1bda03f83f00836"
+  }
+}
+
+{
+  "success": true,
+  "data": {
+    "account": {
+      "name": "adminissue11",
+      "owner": {
+        "privateKey": "5K5PMdd8ZfeDihqjnBnnh8Eu58CGwKG5ZBKF3oPrXPXVP4HJ7oV",
+        "publicKey": "EOS78Jy9kWwHPS9MTCfLBe92WvayPDjanB7BnG2fz8V5TwK5RCXwG"
+      },
+      "active": {
+        "privateKey": "5KdFu2Yg4W26t2EEKKLcxB2qGujhTeEW8ZtEzDYbSsBJDp1nTEi",
+        "publicKey": "EOS7LJGZodZh9oCtZ84NBcy6WTSuU5J31uusDQeqRz86wS3FBk1cT"
+      }
+    },
+    "tx": "93352635add5ca1cea2e2155a2f70d64126946ea898f0ff6200107bbbe8b7ed6"
+  }
+}
+
+{
+  "success": true,
+  "data": {
+    "account": {
+      "name": "adminissue12",
+      "owner": {
+        "privateKey": "5JSxwptEwMMHkopSXjNHeacsTZ3itMpou4kg4m1N9FmDLW5ivQx",
+        "publicKey": "EOS79nnCrtpBYgPoGX7mwY9VbN87LSvuCiZcnjV4WAv2Y8YZDGPU8"
+      },
+      "active": {
+        "privateKey": "5JgQqX3zMBz3VNvmBn11CG4Dh3nBq5rifdKTh77UoHbQ599NQ9d",
+        "publicKey": "EOS6HsZCDyhnX2mq4vpxPXb3qRAX9qBhUJBg11qBdgbX1RUUyjmes"
+      }
+    },
+    "tx": "b6f958c2323f2c55752ac5c38438303142ee97b40141c14c31cecc766da39b0d"
+  }
+}
+
+{
+  "success": true,
+  "data": {
+    "account": {
+      "name": "adminissue13",
+      "owner": {
+        "privateKey": "5K8TB1VE4tF6sgVeKva2HmhkDXjbLJqondGf6TPJ2qE121SnJDc",
+        "publicKey": "EOS6CMWnc5e5er6BNEyThSJHf8cvpuUsA4pw4Fvn3ipnrzb6mVuWV"
+      },
+      "active": {
+        "privateKey": "5JquCBvzDoGAmrrZYVCYLZMoUXqnS8bk9HQik29w2X1yetbQ6Rz",
+        "publicKey": "EOS7XNrf9E1eSuqcLXwwkevZgvrigqxuuykVrBQmR9CA2c4Xn2s8r"
+      }
+    },
+    "tx": "93252072f8463bf9b14539d69824401a0a504be54e573681e41416f745c0dca0"
+  }
+}
+
+{
+  "success": true,
+  "data": {
+    "account": {
+      "name": "ocmtestuser1",
+      "owner": {
+        "privateKey": "5JdFeQAsgehTBf7nFfNs8SneJTVnVEkQwP5phHoW9L7DaBgWTRe",
+        "publicKey": "EOS5zXoe176Kk8c3Mu8FEs9fr5P9EQHg8oo7CCfgH2NNg8v9vPg4z"
+      },
+      "active": {
+        "privateKey": "5JKnNDKDQMXxxKakatYkmJt1UeBJzUFiiHrrjcaBPDC8bKv3ybg",
+        "publicKey": "EOS89AphGk9vX67TQfqJgJvzfNqbmEHFuK1CP9UQnjPHbTiRF5mic"
+      }
+    },
+    "tx": "c3a1546b37939ac8826d09f2802c56dc6866bf2d23ad7b0e0e580fcfcbbf7816"
+  }
+}
+
+
+"success": true,
+"data": {
+  "account": {
+    "name": "ocmtestuser2",
+    "owner": {
+      "privateKey": "5Jh9ekgqbdPyLYwrUEhhs1t2gUJr2CzBUf9DUWYQkJmzgJ9UFzd",
+      "publicKey": "EOS8DqQ68A5cKvmvgJF81jcrkMrSZQYq5EDfxkaarwvMRkcHKuyYG"
+    },
+    "active": {
+      "privateKey": "5JrzEfEmftWXJfGVZutq84g6f3caYQukxhcno2GSggcAFnYYgTz",
+      "publicKey": "EOS7gD1VpaUR2gETKwutRr67uTpJ5z7Y9r196CF3DUjPcYuirvmCi"
+    }
+  },
+  "tx": "5e3abd111b1c3da2b04f6c36a78bbbc89305da5ddd3bcacb725eaf81196671fc"
+}
+}
+
+{
+
+  "success": true,
+  "data": {
+    "account": {
+      "name": "dappproxyac1",
+      "owner": {
+        "privateKey": "5J14oWF4wJXrUovTsmfZpF6bS8AaLVfqiBs34TygqgkZwzNMYML",
+        "publicKey": "EOS7rphtkw9n9MLsmNXAdJMQpmdnDJ6D1jrBpgHKbki7FmTaZo8sC"
+      },
+      "active": {
+        "privateKey": "5JdEGbNSD1tHWsTStqxkxeB467BeVLpdpR8jh3zKxxcYtY8ztcw",
+        "publicKey": "EOS7hp3VXKjZ2W7SSvgx3Gdu71ux6dUntMZBGRkMxgAx74o2FXnmi"
+      }
+    },
+    "tx": "82eaa31d8f0fd1c1ec153c3e2ffd49c569ba7ed0f01a425106c3cc068fe58982"
+  }
+}
