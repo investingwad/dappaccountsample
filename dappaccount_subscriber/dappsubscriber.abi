@@ -1,0 +1,278 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "hello_action",
+            "base": "",
+            "fields": [
+                {
+                    "name": "vaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "dummyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "hello_twofa",
+            "base": "",
+            "fields": [
+                {
+                    "name": "vaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "authcode",
+                    "type": "string"
+                },
+                {
+                    "name": "levelid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "authtype",
+                    "type": "string"
+                },
+                {
+                    "name": "dummyid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "oracleentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                },
+                {
+                    "name": "results",
+                    "type": "provider_result[]"
+                }
+            ]
+        },
+        {
+            "name": "provider_result",
+            "base": "",
+            "fields": [
+                {
+                    "name": "result",
+                    "type": "bytes"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "testdappact",
+            "base": "",
+            "fields": [
+                {
+                    "name": "payload",
+                    "type": "hello_action"
+                }
+            ]
+        },
+        {
+            "name": "testtwofact",
+            "base": "",
+            "fields": [
+                {
+                    "name": "payload",
+                    "type": "hello_twofa"
+                }
+            ]
+        },
+        {
+            "name": "vhost",
+            "base": "",
+            "fields": [
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "xgeturi",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xorcclean",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xsignal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "action",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "signalRawData",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xvexec",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "payload",
+                    "type": "bytes"
+                },
+                {
+                    "name": "sig",
+                    "type": "signature"
+                },
+                {
+                    "name": "pubkey",
+                    "type": "public_key"
+                }
+            ]
+        },
+        {
+            "name": "xvinit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "testdappact",
+            "type": "testdappact",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "testtwofact",
+            "type": "testtwofact",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xgeturi",
+            "type": "xgeturi",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xorcclean",
+            "type": "xorcclean",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xsignal",
+            "type": "xsignal",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xvexec",
+            "type": "xvexec",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xvinit",
+            "type": "xvinit",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "oracleentry",
+            "type": "oracleentry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "vhost",
+            "type": "vhost",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
