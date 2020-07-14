@@ -3,16 +3,13 @@
 
 #include <string>
 #include "./dist/zeus_boxes/contracts/eos/dappservices/vaccounts.hpp"
-#include "./dist/zeus_boxes/contracts/eos/dappservices/oracle.hpp"
 
 
-#define DAPPSERVICES_ACTIONS()  \
-  XSIGNAL_DAPPSERVICE_ACTION    \
-  VACCOUNTS_DAPPSERVICE_ACTIONS \
-  ORACLE_DAPPSERVICE_ACTIONS
+#define DAPPSERVICES_ACTIONS() \
+  XSIGNAL_DAPPSERVICE_ACTION \
+  VACCOUNTS_DAPPSERVICE_ACTIONS
 #define DAPPSERVICE_ACTIONS_COMMANDS() \
-  VACCOUNTS_SVC_COMMANDS()             \
-  ORACLE_SVC_COMMANDS()
+  VACCOUNTS_SVC_COMMANDS()      
 
 #define CONTRACT_NAME() dappsubscriber
 
@@ -41,7 +38,7 @@ public:
   struct hello_twofa
   {
     name vaccount;
-    std::string authcode;
+    std::string authcode;  //access code sent to user's email / contact
     uint64_t levelid;
     std::string authtype;
     uint64_t dummyid;
