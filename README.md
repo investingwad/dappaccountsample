@@ -32,19 +32,19 @@ what is level id and what is other parameters of this inline action call - all t
 If this verification method is followed, dapps need to request for access code using dappaccount library, given in the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) under section 3.2.e.
 
 ##### Steps needed before dapp can start using dappaccount
-**1)** Deploy contract and give eosio.code permission to the account
-**2)** Select and Stake DAPP to use DSP package for Vaccount service. Details Can be found [here](https://docs.liquidapps.io/en/v2.0/developers/vaccounts-getting-started.html#select-and-stake-dapp-for-dsp-package-dsp-portal-link) 
-**3)** Run `xvinit` as state [here](https://docs.liquidapps.io/en/v2.0/developers/vaccounts-getting-started.html#select-and-stake-dapp-for-dsp-package-dsp-portal-link)
+1. Deploy contract and give eosio.code permission to the account
+2. Select and Stake DAPP to use DSP package for Vaccount service. Details Can be found [here](https://docs.liquidapps.io/en/v2.0/developers/vaccounts-getting-started.html#select-and-stake-dapp-for-dsp-package-dsp-portal-link) 
+3. Run `xvinit` as state [here](https://docs.liquidapps.io/en/v2.0/developers/vaccounts-getting-started.html#select-and-stake-dapp-for-dsp-package-dsp-portal-link)
 < if using VACCOUNTS_SUBSCRIBER>
 ```
 export HOST_ACCOUNT_NAME=dappaccoun.t
 cleos -u $DSP_ENDPOINT push action $DAPP_CONTRACT_ACCOUNT xvinit "[\"$HOST_ACCOUNT_NAME\"]" -p $DAPP_CONTRACT_ACCOUNT
 ```
 DSP_ENDPOINT - it is specific to the DSP dapp has selected and staked to. **dappaccoun.t** is staked to **blockstartac** provider
-**4)** Whitelist Contract on dappaccount contract 
+4. Whitelist Contract on dappaccount contract 
 It cannot be done with DAPP's permission now. It will need dappaccount's authorization. Please contact dappaccount team for the same.
 Contact through [Telegram](https://t.me/dappaccount)
-**5)** Once the contract is whitelisted, DAPP needs to whitelist its action with the specific security level.
+5. Once the contract is whitelisted, DAPP needs to whitelist its action with the specific security level.
 Information about security level and action whitelisting , can be found on the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing). Specifically , under **Section 2.3**
 
 Dapps need to call action adddappact of dappaccoun.t contract
