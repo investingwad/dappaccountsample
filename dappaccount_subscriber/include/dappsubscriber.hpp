@@ -39,9 +39,9 @@ public:
   {
     name vaccount;
     std::string authcode;  //access code sent to user's email / contact
-    uint64_t levelid;
-    std::string authtype;
-    uint64_t dummyid;
+    uint64_t levelid;       // 1 or 2, explained in docs. Refer to readme.md
+    std::string authtype;   //"email" OR "phone" depends on level id, refer to readme.md
+    uint64_t dummyid;       //dummy field 
 
     EOSLIB_SERIALIZE(hello_twofa, (vaccount)(authcode)(levelid)(authtype)(dummyid))
   };
