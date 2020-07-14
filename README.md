@@ -41,6 +41,7 @@ export HOST_ACCOUNT_NAME=dappaccoun.t
 cleos -u $DSP_ENDPOINT push action $DAPP_CONTRACT_ACCOUNT xvinit "[\"$HOST_ACCOUNT_NAME\"]" -p $DAPP_CONTRACT_ACCOUNT
 ```
 DSP_ENDPOINT - it is specific to the DSP dapp has selected and staked to. **dappaccoun.t** is staked to **blockstartac** provider
+
 4. Whitelist Contract on dappaccount contract 
 It cannot be done with DAPP's permission now. It will need dappaccount's authorization. Please contact dappaccount team for the same.
 Contact through [Telegram](https://t.me/dappaccount)
