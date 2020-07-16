@@ -27,7 +27,10 @@ where `name Vaccount` must be added in the structure where the action has the vi
 The first line of this action defines how we need to authorize the action with virtual user's permission. It is done by simply passing the virtual account name in the require_vaccount() method. To use this method, dapps must include the liquidapps library files with a correct path as stated above.
 
 ##### Action testtwofact  
-This example action defines how to define an action of higher security level with two factor authentication - first factor is verifying user's email / contact with access code within smart contract (through an inline action call) and then with user's signature. If dapp doesn't want to use verification of email / phone while calling action, it can follow `testdappact` action only.  **Note :** The user's key, through which signature is generated, are always added by verifying email / contact at the time of user registration on dappaccount.
+This example action defines how to define an action of higher security level with two factor authentication - first factor is verifying user's email / contact with access code within smart contract (through an inline action call) and then with user's signature. If dapp doesn't want to use verification of email / phone while calling action, it can follow `testdappact` action only.  
+
+
+**Note :** The user's key, through which signature is generated, are always added by verifying email / contact at the time of user registration on dappaccount.
 All the informations about level id and other parameters of this inline action call, can be found on the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing)
 If this verification method is followed, dapps need to request for access code using dappaccount library, given in the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) under section 3.2.e.
 
