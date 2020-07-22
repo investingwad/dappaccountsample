@@ -41,6 +41,8 @@ If this verification method is followed, dapps need to request for access code u
 
 Dapps must stake to VRAM and VACCOUNT services to use this sbuscriber model. Please refer to this [liquidapps doc](https://docs.liquidapps.io/en/v2.0/developers/dsp-packages-and-staking.html) for a better understanding about available DSP packages.
 
+**Note :** Please refer to the Section 3.3 of [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) before selecting any DSP.
+
 3. Run `xvinit` as state [here](https://docs.liquidapps.io/en/v2.0/developers/vaccounts-getting-started.html#select-and-stake-dapp-for-dsp-package-dsp-portal-link)  
 
 < if using VACCOUNTS_SUBSCRIBER>
@@ -50,9 +52,9 @@ cleos -u $DSP_ENDPOINT push action $DAPP_CONTRACT_ACCOUNT xvinit "[\"$HOST_ACCOU
 ```
 DSP_ENDPOINT - it is specific to the DSP dapp has selected and staked to. **dappaccoun.t** is staked to **blockstartac** provider
 
-4. Whitelist Contract on dappaccount contract 
-It cannot be done with DAPP's permission now. It will need dappaccount's authorization. Please contact dappaccount team for the same.
+4. Whitelist Contract on dappaccount contract It cannot be done with DAPP's permission now. It will need dappaccount's authorization. Please contact dappaccount team for the same. The whitelisting includes defining a quota which is done by dappaccount for now. Later it will be a automated process which can be initiated by dapp itself. Please find the  information about Quota below.
 Contact through [Telegram](https://t.me/dappaccount)
+
 5. Once the contract is whitelisted, DAPP needs to whitelist its action with the specific security level.
 Information about security level and action whitelisting , can be found on the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing). Specifically , under **Section 2.3**
 
@@ -64,3 +66,9 @@ This action registers an array of action of the DAPP contract under a particular
 
 After these steps , DAPP will be ready to register its users on dappaccount and then use their signatures to authorize action. 
 How to register users on dappaccount and then user their signature to authorize dapp's action can be found [here](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) under **Section 3.2**
+
+
+
+QUOTA - 
+
+Quota is a limit set by dappaccount initially, and later can be increased by a dapp following certain steps. Those will be defined soon. Quota is a number which describes the number of transaction that can be performed in a day by a particular dapp. And here the transaction means action with virtual account's (dappaccount for user) permission (like described in this sample contract). The quota is reset in every 24 hours automatically. The registration or login / recovery does not come under any quota. That is unlimited.
