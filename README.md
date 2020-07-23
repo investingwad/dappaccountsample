@@ -67,13 +67,10 @@ This action registers an array of action of the DAPP contract under a particular
 After these steps , DAPP will be ready to register its users on dappaccount and then use their signatures to authorize action. 
 How to register users on dappaccount and then user their signature to authorize dapp's action can be found [here](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) under **Section 3.2**
 
-
-
-QUOTA - 
-
+**QUOTA -** 
 Quota is a limit set by dappaccount initially, and later can be increased by a dapp following certain steps. Those will be defined soon. Quota is a number which describes the number of transaction that can be performed in a day by a particular dapp. And here the transaction means action with virtual account's (dappaccount for user) permission (like described in this sample contract). The quota is reset in every 24 hours automatically. The registration or login / recovery does not come under any quota. That is unlimited.
 
-
+##### Dappaccount token contract -
 This repo also contains a sample of dappaccount token contract which is responsible for all the balance handling, stake unstake functionalities.
 Dappaccount has two separate contracts, One is HOST contract i.e for maintaing the virtual account informations which are created by dapps, And other is the token contract which handles all the transfer functionlities. The token contract also acts as a subscriber model to the dappaccount HOST contract. The sample code contains few example actions to show how the things are managed.
 
@@ -86,5 +83,3 @@ This action acts as a withdraw action where dappaccount user can send token to a
 ##### Action withdraw
 
 This action is used for large amount withdraw from dappaccount contract. It also performs two factor auth before transferring token to EOS account. It is done ina  similar way as described in the sample subscriber contract for Dapps.
-
-Due to certain reasons, two separate actions have been created for withdraw instead of one.
