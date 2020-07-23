@@ -1,0 +1,693 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "accountbal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "tokencontract",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "ipfsentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                },
+                {
+                    "name": "pending_commit",
+                    "type": "bool$"
+                }
+            ]
+        },
+        {
+            "name": "oracleentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                },
+                {
+                    "name": "results",
+                    "type": "provider_result[]"
+                }
+            ]
+        },
+        {
+            "name": "provider_result",
+            "base": "",
+            "fields": [
+                {
+                    "name": "result",
+                    "type": "bytes"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "settings",
+            "base": "",
+            "fields": [
+                {
+                    "name": "withdraw_limit",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "shardbucket",
+            "base": "",
+            "fields": [
+                {
+                    "name": "shard_uri",
+                    "type": "bytes"
+                },
+                {
+                    "name": "shard",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "transfer_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "vaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "transferacc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "payload",
+                    "type": "transfer_struct"
+                }
+            ]
+        },
+        {
+            "name": "transfervacc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "payload",
+                    "type": "transfer_struct"
+                }
+            ]
+        },
+        {
+            "name": "vconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "next_available_key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "shards",
+                    "type": "uint32"
+                },
+                {
+                    "name": "buckets_per_shard",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "vhost",
+            "base": "",
+            "fields": [
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "payload",
+                    "type": "withdraw_struct"
+                }
+            ]
+        },
+        {
+            "name": "withdraw_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "vaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "authcode",
+                    "type": "string"
+                },
+                {
+                    "name": "levelid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "authtype",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xcleanchain",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "shard",
+                    "type": "uint32"
+                },
+                {
+                    "name": "code",
+                    "type": "name"
+                },
+                {
+                    "name": "table",
+                    "type": "name"
+                },
+                {
+                    "name": "chain",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uris",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "xcleanup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xcleanuprow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uris",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "xcommit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "xdcommit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xgeturi",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xorcclean",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xsignal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "service",
+                    "type": "name"
+                },
+                {
+                    "name": "action",
+                    "type": "name"
+                },
+                {
+                    "name": "provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "signalRawData",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xvexec",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "payload",
+                    "type": "bytes"
+                },
+                {
+                    "name": "sig",
+                    "type": "signature"
+                },
+                {
+                    "name": "pubkey",
+                    "type": "public_key"
+                }
+            ]
+        },
+        {
+            "name": "xvinit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "xwarmup",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xwarmupchain",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "shard",
+                    "type": "uint32"
+                },
+                {
+                    "name": "code",
+                    "type": "name"
+                },
+                {
+                    "name": "table",
+                    "type": "name"
+                },
+                {
+                    "name": "chain",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uris",
+                    "type": "string[]"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes[]"
+                }
+            ]
+        },
+        {
+            "name": "xwarmupcode",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uri",
+                    "type": "string"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "name": "xwarmuprow",
+            "base": "",
+            "fields": [
+                {
+                    "name": "current_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "package",
+                    "type": "name"
+                },
+                {
+                    "name": "size",
+                    "type": "uint32"
+                },
+                {
+                    "name": "uris",
+                    "type": "string[]"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes[]"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "transferacc",
+            "type": "transferacc",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfervacc",
+            "type": "transfervacc",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xcleanchain",
+            "type": "xcleanchain",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xcleanup",
+            "type": "xcleanup",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xcleanuprow",
+            "type": "xcleanuprow",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xcommit",
+            "type": "xcommit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xdcommit",
+            "type": "xdcommit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xgeturi",
+            "type": "xgeturi",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xorcclean",
+            "type": "xorcclean",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xsignal",
+            "type": "xsignal",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xvexec",
+            "type": "xvexec",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xvinit",
+            "type": "xvinit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xwarmup",
+            "type": "xwarmup",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xwarmupchain",
+            "type": "xwarmupchain",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xwarmupcode",
+            "type": "xwarmupcode",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "xwarmuprow",
+            "type": "xwarmuprow",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": ".accountblc1",
+            "type": "accountbal",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": ".vconfig",
+            "type": "vconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "accountblc1",
+            "type": "shardbucket",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "configsett5",
+            "type": "settings",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "ipfsentry",
+            "type": "ipfsentry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "oracleentry",
+            "type": "oracleentry",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "vhost",
+            "type": "vhost",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
