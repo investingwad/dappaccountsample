@@ -72,3 +72,19 @@ How to register users on dappaccount and then user their signature to authorize 
 QUOTA - 
 
 Quota is a limit set by dappaccount initially, and later can be increased by a dapp following certain steps. Those will be defined soon. Quota is a number which describes the number of transaction that can be performed in a day by a particular dapp. And here the transaction means action with virtual account's (dappaccount for user) permission (like described in this sample contract). The quota is reset in every 24 hours automatically. The registration or login / recovery does not come under any quota. That is unlimited.
+
+
+This repo also contains a sample of dappaccount token contract which is responsible for all the balance handling, stake unstake functionalities.
+Dappaccount has two separate contracts, One is HOST contract i.e for maintaing the virtual account informations which are created by dapps, And other is the token contract which handles all the transfer functionlities. The token contract also acts as a subscriber model to the dappaccount HOST contract. The sample code contains few example actions to show how the things are managed.
+
+##### Action transfervacc
+This action basically handles the transfer between two virtual accounts registered on dappaccount HOST contract. the transfer simply modifies the accounts table within the token contract.
+
+##### Action transferacc  
+This action acts as a withdraw action where dappaccount user can send token to actual EOS account. This withdraw functionality has two methods based on the withdrawal amount. Below a certain limit (set by dappaccount authority), this action is used for amount withdrawl. And if the quantity is more then used needs to do a two factor authentication before actually sending token to EOS account. For this 2nd type, the below action is used. 
+
+##### Action withdraw
+
+This action is used for large amount withdraw from dappaccount contract. It also performs two factor auth before transferring token to EOS account. It is done ina  similar way as described in the sample subscriber contract for Dapps.
+
+Due to certain reasons, two separate actions have been created for withdraw instead of one.
