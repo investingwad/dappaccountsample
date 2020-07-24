@@ -32,8 +32,8 @@ This example action defines how to define an action of higher security level wit
 
 **Note :** The user's keys, through which signature is generated and later verified in action like stated above, are always added by verifying email / contact at the time of user registration on dappaccount for every user. So, this depends on dapps and the security level of the action , that whether the access code verification is needed at the time of action call or not.
 
-All the informations about level id and other parameters of this inline action call, can be found on the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing)
-If this verification method is followed, dapps need to request for access code using dappaccount library, given in the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) under section 3.2.e.
+All the informations about level id and other parameters of this inline action call, can be found on the [docs](https://s3.amazonaws.com/document.dappaccount.com/index.html)
+If this verification method is followed, dapps need to request for access code using dappaccount library, given in the [docs](https://s3.amazonaws.com/document.dappaccount.com/index.html) under section 3.2.e.
 
 ##### Steps needed before dapp can start using dappaccount
 1. Deploy contract and give eosio.code permission to the account
@@ -41,7 +41,7 @@ If this verification method is followed, dapps need to request for access code u
 
 Dapps must stake to VRAM and VACCOUNT services to use this sbuscriber model. Please refer to this [liquidapps doc](https://docs.liquidapps.io/en/v2.0/developers/dsp-packages-and-staking.html) for a better understanding about available DSP packages.
 
-**Note :** Please refer to the Section 3.3 of [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) before selecting any DSP.
+**Note :** Please refer to the Section 3.3 of [docs](https://s3.amazonaws.com/document.dappaccount.com/index.html) before selecting any DSP.
 
 3. Run `xvinit` as state [here](https://docs.liquidapps.io/en/v2.0/developers/vaccounts-getting-started.html#select-and-stake-dapp-for-dsp-package-dsp-portal-link)  
 
@@ -56,16 +56,16 @@ DSP_ENDPOINT - it is specific to the DSP dapp has selected and staked to. **dapp
 Contact through [Telegram](https://t.me/dappaccount)
 
 5. Once the contract is whitelisted, DAPP needs to whitelist its action with the specific security level.
-Information about security level and action whitelisting , can be found on the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing). Specifically , under **Section 2.3**
+Information about security level and action whitelisting , can be found on the [docs](https://s3.amazonaws.com/document.dappaccount.com/index.html). Specifically , under **Section 2.3**
 
 Dapps need to call action adddappact of dappaccoun.t contract
 ```
 cleos -u $EOS_ENDPOINT push action $HOST_ACCOUNT_NAME adddappact '{"dappaccount":<DAPP_CONTRACT_ACCOUNT>, "levelid": <1 OR 2>, "actionlist": [action1, action2]}' -p $DAPP_CONTRACT_ACCOUNT
 ```
-This action registers an array of action of the DAPP contract under a particular security level. If action1 needs less security, it can be marked as level 1 and high security action can be marked as level 2. Details on level id and action whitelisting can be found under **Section 2.2 and 2.3** of the [docs](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing)
+This action registers an array of action of the DAPP contract under a particular security level. If action1 needs less security, it can be marked as level 1 and high security action can be marked as level 2. Details on level id and action whitelisting can be found under **Section 2.2 and 2.3** of the [docs](https://s3.amazonaws.com/document.dappaccount.com/index.html)
 
 After these steps , DAPP will be ready to register its users on dappaccount and then use their signatures to authorize action. 
-How to register users on dappaccount and then user their signature to authorize dapp's action can be found [here](https://docs.google.com/document/d/1fB5kH-fLERaeF5XRJo33V0edBLPbIJ2UIEuxvmEyjQc/edit?usp=sharing) under **Section 3.2**
+How to register users on dappaccount and then user their signature to authorize dapp's action can be found [here](https://s3.amazonaws.com/document.dappaccount.com/index.html) under **Section 3.2**
 
 **QUOTA -** 
 Quota is a limit set by dappaccount initially, and later can be increased by a dapp following certain steps. Those will be defined soon. Quota is a number which describes the number of transaction that can be performed in a day by a particular dapp. And here the transaction means action with virtual account's (dappaccount for user) permission (like described in this sample contract). The quota is reset in every 24 hours automatically. The registration or login / recovery does not come under any quota. That is unlimited.
